@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Real-Time-Clock/static/css/main.77b4ff52.css",
+    "main.js": "/Real-Time-Clock/static/js/main.c48f10fa.js",
+    "static/js/787.b972bb5b.chunk.js": "/Real-Time-Clock/static/js/787.b972bb5b.chunk.js",
+    "index.html": "/Real-Time-Clock/index.html",
+    "main.77b4ff52.css.map": "/Real-Time-Clock/static/css/main.77b4ff52.css.map",
+    "main.c48f10fa.js.map": "/Real-Time-Clock/static/js/main.c48f10fa.js.map",
+    "787.b972bb5b.chunk.js.map": "/Real-Time-Clock/static/js/787.b972bb5b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77b4ff52.css",
+    "static/js/main.c48f10fa.js"
+  ]
+}
