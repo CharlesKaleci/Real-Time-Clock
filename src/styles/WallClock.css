@@ -1,0 +1,45 @@
+.wall-clock-container.day-mode {
+    background: #eeeeee;
+}
+
+.clock-face {
+    background: #eeeeee;
+    height: 300px; 
+    width: 300px; 
+    border-radius: 50%; 
+    position: relative;
+}
+
+.clock-face.day-mode {
+    background: #e7eaf6;
+}
+
+.hour-hand {
+    background-color: #212121;
+    height: 80px; 
+    width: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -100%) rotate(180deg); 
+    transform-origin: bottom center;
+}
+
+.minute-hand {
+    background-color: #212121;
+    height: 120px; 
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: center bottom;
+}
+
+.second-hand {
+    background: red;
+    height: 150px; 
+    width: 1px;
+    left: 50%;
+    position: absolute;
+    transform-origin: center bottom;
+}

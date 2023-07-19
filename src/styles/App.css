@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: #18191b;
+    color: #eeeeee;
+    font-family: 'Tektur', cursive;
+}
+
+.day-mode {
+    background: #e7eaf6;
+    color: #18191b;
+}
+
+.App {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-container {
+    background: #212121;
+    width: 100%; 
+    max-width: 360px; 
+    height: auto; 
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px; 
+}
+
+.wallclock-container {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-container.day-mode {
+    background: #eeeeee;
+    color: #18191b;
+}
+
+.clock-container .clock-settings {
+    background: #18191b;
+    width: 100%;
+    height: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock-container .clock-settings.day-mode {
+    background: #e7eaf6;
+    color: #18191b;
+}
+
+.clock-container .clock-settings button {
+    background: transparent;
+    color: #eeeeee;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Tektur', cursive;
+    transition: font-size 0.5s;
+}
+
+.clock-container .clock-settings button.day-mode {
+    color: #18191b;
+}
+
+.clock-container .clock-settings button:hover {
+    font-size: large;
+}
+
+.clock-container div.hour,
+.clock-container div.minute,
+.clock-container div.second {
+    background: #18191b;
+    width: 56px;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline;
+    font-size: x-large;
+    position: relative;
+}
+
+.clock-container div.hour.day-mode,
+.clock-container div.minute.day-mode,
+.clock-container div.second.day-mode {
+    background: #e7eaf6;
+    color: #18191b;
+}
+
+div.hour span {
+    position: absolute;
+    font-size: 12px;
+    bottom: 0px;
+}
+
+.clock-container .clock-settings {
+    transition: transform 0.9s ease;
+    transform: translateX(+100%);
+}
+
+.clock-container .clock-settings.open {
+    transform: translateX(0);
+}
+
+.clock-container .clock-controls {
+    transition: opacity 0.9s ease;
+    opacity: 0;
+}
+
+.clock-container .clock-controls.open {
+    opacity: 1;
+}
